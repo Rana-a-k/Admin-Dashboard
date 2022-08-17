@@ -2,6 +2,7 @@ import React from 'react'
 import { AiOutlineUser } from 'react-icons/ai';
 import { MdPostAdd } from 'react-icons/md';
 import { NavLink } from 'react-router-dom'
+import Loader from '../Loader/Loader';
 
 function Widget({title, number}) {
     let data;
@@ -28,7 +29,9 @@ function Widget({title, number}) {
                 <span className='text-lg'>20%</span>
             </div>
             <div className='m-3'>
+                {!number?<Loader/>:
                 <span className='text-xl'>{number}</span>
+                }
             </div>
             <div className='flex justify-between m-3 underline'>
                 <NavLink to={`/${title}`}>Sell all {title}</NavLink>
