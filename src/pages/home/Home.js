@@ -3,6 +3,10 @@ import { useSelector } from 'react-redux';
 import Navbar from '../../components/home/Navbar'
 import Sidebar from '../../components/home/Sidebar'
 import Widget from '../../components/home/Widget'
+<<<<<<< HEAD
+=======
+import Loader from '../../components/Loader/Loader';
+>>>>>>> 2f0480831c264a963e721a3ddbf7b3e0fd694be2
 import Statistics from '../../components/statistics/Statistics';
 import { axiosInstance } from '../../network/axiosInstance';
 

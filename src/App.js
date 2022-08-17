@@ -25,7 +25,11 @@ function App() {
           <Route path="/users" element={<UsersList />} />
           <Route path="/posts" element={<Posts />} />
 <<<<<<< HEAD
+<<<<<<< HEAD
           
+=======
+          <Route path="/profile" element={<Profile />} />
+>>>>>>> 2f0480831c264a963e721a3ddbf7b3e0fd694be2
 =======
           <Route path="/profile" element={<Profile />} />
 >>>>>>> 2f0480831c264a963e721a3ddbf7b3e0fd694be2
