@@ -11,7 +11,6 @@ function UsersTable() {
             .get("/admin/users")
             .then((res) => {
                 dispatch(addUserData(res.data));
-                console.log("user:",userState);
             })
             .catch((err) => console.log(err));
         }, []);
@@ -19,7 +18,12 @@ function UsersTable() {
         axiosInstance
         .delete(`/admin/users/${id}`)
         .then(res=>{
-            dispatch(addUserData(res.data));
+            axiosInstance
+            .get("/admin/users")
+            .then((res) => {
+                dispatch(addUserData(res.data));
+            })
+            .catch((err) => console.log(err));
         })
         .catch((err) => console.log(err));
     }

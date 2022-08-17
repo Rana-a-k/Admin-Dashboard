@@ -19,7 +19,13 @@ function PostsTable() {
         axiosInstance
         .delete(`/admin/posts/${id}`)
         .then(res=>{
-            dispatch(addPostData(res.data));
+            axiosInstance
+            .get("/admin/posts")
+            .then((res) => {
+                dispatch(addPostData(res.data));
+                console.log(res.data);
+            })
+            .catch((err) => console.log(err));
         })
         .catch((err) => console.log(err));
     }
