@@ -19,15 +19,9 @@ function UsersTable() {
             .get("/admin/users")
             .then((res) => {
                 dispatch(addUserData(res.data));
-<<<<<<< HEAD
-<<<<<<< HEAD
                 setUsers(res.data);
                 console.log("user:",userState);
                 setLoading(false);
-=======
->>>>>>> 2f0480831c264a963e721a3ddbf7b3e0fd694be2
-=======
->>>>>>> 2f0480831c264a963e721a3ddbf7b3e0fd694be2
             })
             .catch((err) => console.log(err));
         }, []);
