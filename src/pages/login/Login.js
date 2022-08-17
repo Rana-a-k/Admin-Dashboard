@@ -1,8 +1,11 @@
 import React from 'react'
+import LoginForm from '../../components/LoginForm/LoginForm'
 
 function Login() {
     return (
-        <div>Login</div>
+        <div className='bg-gray-200'>
+            <LoginForm/>
+        </div>
     )
 }
 
