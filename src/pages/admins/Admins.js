@@ -1,4 +1,5 @@
 import React from 'react'
+import AddAdminForm from '../../components/addAdminForm/AddAdminForm'
 import Sidebar from '../../components/home/Sidebar'
 
 function Admins() {
@@ -7,8 +8,8 @@ function Admins() {
             <div className='col-span-2'>
                 <Sidebar/>
             </div>
-            <div>
-                admin
+            <div className='col-span-8 '>
+                <AddAdminForm/>
             </div>
         </div>
     )

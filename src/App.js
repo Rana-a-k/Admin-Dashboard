@@ -10,6 +10,8 @@ import Posts from './pages/posts/Posts';
 import Error from './pages/error/Error';
 import Admins from './pages/admins/Admins';
 import Profile from "./pages/profile/Profile";
+import SignUp from "./pages/signUp/SignUp";
+
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
         <Route path="/" >
           <Route index element={<Home />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<SignUp/>}/>
           <Route path="/admins" element={<Admins />} />
           <Route path="/users" element={<UsersList />} />
           <Route path="/posts" element={<Posts />} />

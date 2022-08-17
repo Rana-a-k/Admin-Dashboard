@@ -35,6 +35,7 @@ function UsersTable() {
                     <th className='w-1/6 p-2 border-r border-indigo-300'>User ID</th>
                     <th className='w-1/6 p-2 border-r border-indigo-300'>First Name</th>
                     <th className='w-1/6 p-2 border-r border-indigo-300'>lastName</th>
+                    <th className='w-1/6 p-2 border-r border-indigo-300'>Email</th>
                     <th className='w-1/6 p-2 border-r border-indigo-300'>Shared Posts</th>
                     <th className='w-1/6 p-2 border-indigo-300'>Delete</th>
                 </tr>
@@ -46,6 +47,7 @@ function UsersTable() {
                         <td className='text-center'>{user.userId}</td>
                         <td className='text-center'>{user.firstName}</td>
                         <td className='text-center'>{user.lastName}</td>
+                        <td className='text-center'>{user.email}</td>
                         {<td className='text-center'>{user.sharedPosts.length}</td>}
                         <td className='text-center'><button className='p-2 rounded-lg bg-red-500 text-white' onClick={()=>deleteHandler(user._id)}>Delete</button></td>
                     </tr>
